@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../scripts/script3_1.js"></script>
+    <script src="../scripts/script3_2.js"></script>
+    <script src="../scripts/script3_3.js"></script>
+    <script src="../scripts/script3_4.js"></script>
+    <link rel="stylesheet" href="../Style/style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="p_wrap">
+        <p id="lr">Лабораторная работа № 3</p>
+    </div>
+    <div class="lr">
+        <div class="task1">
+            <div class="h_3">
+                <h3>Задание 1</h3>
+            </div>
+            
+            <div id="task_input">
+                <div>
+                    <p>
+                        <label>Введите 3-x значное число</label>
+                        <input type="text" id="number">
+                    </p>
+                </div>
+                
+            </div>
+            <div id="calc1">
+                <div><button onclick="check()">Вычислить</button></div>
+            </div>
+            <div id="result1">
+                None
+            </div>
+            <div>
+                <p class="label">Дано целое положительное число. Проверить истинность высказывания: «Данное число является четным трехзначным».</p>
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="task2">
+            <div class="h_3">
+                <h3>Задание 2</h3>
+            </div>
+            <div id="task_input">
+                <div>
+                    <p>
+                        <label>Введите A</label>
+                    <input type="text" id="A">
+                    </p>
+                    <p>
+                        <label>Введите B</label>
+                        <input type="text" id="B">
+                    </p>
+                    <p>
+                        <label>Введите C</label>
+                    <input type="text" id="C">
+                    </p>
+                    
+                </div>
+            </div>
+            <div id="calc2">
+                <div><button onclick="check_row_numbers()">Получить ответ</button></div>
+            </div>
+            <div  id="result2">
+               0
+            </div>
+            <div>
+                <p class="label"> Даны три переменные вещественного типа: A, B, C. Если их значения упорядочены по возрастанию, то удвоить их; в противном случае заменить значение каждой переменной на противоположное. Вывести новые
+                    значения переменных A, B, C.</p>
+                
+            </div>
+        </div>
+        <div class="task3">
+            <div class="h_3">
+                <h3>Задание 3</h3>
+            </div>
+            <div id="task_input">
+                <div>
+                    <p>
+                        <label>Введите x</label>
+                        <input type="text" id="x">
+                    </p>
+                </div>
+            </div>
+            <div id="calc3">
+                <div><button onclick="calc_system()">Получить ответ</button></div>
+            </div>
+            <div id="result3">
+                0
+            </div>
+            <div>
+                <p class="label"> при x < 3; y = ax+bx^2 </p>
+                <p class="label"> при  3 =< x <= 6; y = e^x + x^2 </p>
+                <p class="label"> при x > 6; y = sin ^2 (bx)</p>
+            </div>
+        </div>
+        <div class="task4">
+            <div class="h_3">
+                <h3>Задание 4</h3>
+            </div>
+            <div id="task_input">
+                <div>
+                    <p>
+                        <label>Введите x</label>
+                        <input type="text" id="X">
+                        
+                    </p>
+                </div>
+                    
+            </div>
+            <div id="calc4">
+                <div><button onclick="calc_switch()">Получить ответ</button></div>
+            </div>
+            <div id="result4">
+                0
+            </div>
+            <div>
+                <p class="label"> при x = 3; y = ax+bx^2 </p>
+                <p class="label"> при x = 6; y = e^x + x^2 </p>
+                <p class="label"> при x = 9; y = sin ^2 (bx)</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html> 

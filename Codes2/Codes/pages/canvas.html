@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Снеговик и Елка на Линии</title>
+<style>
+  canvas {
+    border: 1px solid #ccc;
+  }
+</style>
+</head>
+<body>
+
+<canvas id="myCanvas" width="700" height="700"></canvas>
+
+<script>
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+
+    const blueColor = '#4682B4';
+    const blackColor = '#000000';
+    const greenColor = '#228B22';
+    const brownColor = '#8B4513';
+    const orangeColor = 'orange';
+
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
+    
+    const lineY = centerY + 180; // Координата Y линии
+
+    // Линия
+    ctx.beginPath();
+    ctx.moveTo(centerX - 300, lineY);
+    ctx.lineTo(centerX + 300, lineY);
+    ctx.strokeStyle = blackColor;
+    ctx.lineWidth = 2;
+    ctx.stroke();
+
+    // Снеговик (положение изменено)
+    ctx.fillStyle = blueColor;
+    ctx.fillRect(centerX - 150 - 50, lineY - 100, 100, 100);
+    ctx.fillRect(centerX - 150 - 40, lineY - 185, 80, 90);
+    ctx.fillRect(centerX - 150 - 30, lineY - 250, 60, 70);
+
+    // Глаза
+    ctx.beginPath();
+    ctx.arc(centerX - 150 - 14, lineY - 235, 7, 0, 2 * Math.PI);
+    ctx.fillStyle = blackColor;
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(centerX - 150 + 16, lineY - 235, 7, 0, 2 * Math.PI);
+    ctx.fillStyle = blackColor;
+    ctx.fill();
+
+    // Нос
+    ctx.fillStyle = orangeColor;
+    ctx.fillRect(centerX - 150, lineY - 215, 40, 5);
+
+    // Рот
+    ctx.fillStyle = blackColor;
+    ctx.fillRect(centerX - 150 - 10, lineY - 203, 30, 5);
+
+    // Елка (положение изменено)
+    ctx.fillStyle = brownColor;
+    ctx.fillRect(centerX + 150 - 10, lineY -80, 20, 80);
+    
+    let treeY = lineY - 80;
+    let halfWidth;
+
+    // Ветви
+    ctx.beginPath();
+    halfWidth = 30;
+    ctx.moveTo(centerX + 150 - halfWidth, treeY);
+    ctx.lineTo(centerX + 150 + halfWidth, treeY);
+    ctx.lineTo(centerX + 150, treeY - 60);
+    ctx.closePath();
+    ctx.fillStyle = greenColor;
+    ctx.fill();
+
+    ctx.beginPath();
+    halfWidth = 25;
+    ctx.moveTo(centerX + 150 - halfWidth, treeY - 60);
+    ctx.lineTo(centerX + 150 + halfWidth, treeY - 60);
+    ctx.lineTo(centerX + 150, treeY - 120);
+    ctx.closePath();
+    ctx.fillStyle = greenColor;
+    ctx.fill();
+
+    ctx.beginPath();
+    halfWidth = 20;
+    ctx.moveTo(centerX + 150 - halfWidth, treeY - 120);
+    ctx.lineTo(centerX + 150 + halfWidth, treeY - 120);
+    ctx.lineTo(centerX + 150, treeY - 180);
+    ctx.closePath();
+    ctx.fillStyle = greenColor;
+    ctx.fill();
+</script>
+
+</body>
+</html>

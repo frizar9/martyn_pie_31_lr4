@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Style/style.css">
+    <title>Лабораторная работа</title>
+    <script src="../scripts/script2_1.js"></script>
+    <script src="../scripts/script2_2.js"></script>
+</head>
+<body>
+    <div class="p_wrap">
+        <p>Лабораторная работа № 2</p>
+    </div>
+    <div class="lr">
+        
+        <!-- Задание № 1 -->
+        <div class="task1">
+            <h3>Задание № 1</h3>
+            <div class="task_input">
+              <div>
+                <label>Введите x1</label>
+              <input type="text" id="x1">
+              </div>
+              <div>
+                <label>Введите x2</label>
+                <input type="text" id="x2">
+              </div>
+            </div>
+            <div id="calc1">
+                <button onclick="calculateTwoOneDistance()">Вычислить</button>
+                <div id="result1">Ответ:</div>
+            </div>
+        </div>
+        
+        <!-- Задание № 2 -->
+        <div class="task2">
+            <h3>Задание № 2</h3>
+            <div class="task_input">
+              <label>Введите 3-x значное число:</label>
+              <input type="text" id="threeDigitNumber">
+            </div>
+            <div id="calc2">
+                <button onclick="swapDigits()">Вычислить</button>
+                <div id="result2">Ответ:</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
